@@ -39,7 +39,7 @@ class MediaStoreQuery(private val contextApplication : Context) {
 
     fun getListMedia(
         type : TypeMedia,
-        bucketId : String? = null,
+        bucketId : Long? = null,
         columns : Set<String> = emptySet(),
         orderBy: OrderBy? = null,
         paging : Paging? = null

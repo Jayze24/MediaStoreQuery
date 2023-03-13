@@ -10,7 +10,7 @@ internal class HelperMediaList(private val helperMediaQuery : HelperMediaQuery) 
 
     fun getListMedia(
         type : TypeMedia,
-        bucketId : String? = null,
+        bucketId : Long? = null,
         columns : Set<String> = emptySet(),
         orderBy: OrderBy? = null,
         paging : Paging? = null
