@@ -39,7 +39,7 @@ internal class HelperMediaQuery(private val contentResolver: ContentResolver) {
             groupBy?.also { w.append(it.joinToString(prefix = ") GROUP BY (")) }
 
             val sort = StringBuilder()
-            orderBy?.getString()?.also { sort.append(it) }
+            orderBy?.getString()?.also { sort.append(it) } ?: sort.append("1")
             limit?.also { sort.append(" LIMIT $it") }
             offset?.also { sort.append(" OFFSET $it") }
 
